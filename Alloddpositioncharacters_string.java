@@ -1,15 +1,16 @@
-public class Main {
+class A {
     public static void main(String[] args) {
-        String text = "type here to search";
-        boolean oddPosition = true;
-        for (int i = 0; i < text.length(); i++) {
-            char ch = text.charAt(i);
-            if (ch != ' ') {
-                if (oddPosition) {
-                    System.out.print(ch + " ");
-                }
-                oddPosition = !oddPosition;
+        String t="type here to search";
+        int i;
+        String s=" ";
+        
+        for (i=0;i<(t.length());i++)
+        {
+            if (i%2!=0 && t.charAt(i) !=' ')
+            {
+                s=s+t.charAt(i);
             }
         }
+        System.out.print(s);
     }
 }
